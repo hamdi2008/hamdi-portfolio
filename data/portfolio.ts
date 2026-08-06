@@ -17,8 +17,8 @@ export const portfolio = {
 
 export const socialLinks = {
   github: { label: "github.com/hamdi2008", href: "https://github.com/hamdi2008" },
-  twitter: { label: "@hamdihassan", href: "https://x.com/hamdihassan" },
-  email: { label: "hello@hamdihassan.com", href: "mailto:hello@hamdihassan.com" },
+  twitter: { label: "@hamdimahmuud", href: "https://x.com/hamdimahmuud" },
+  email: { label: "hamdi2008@gmail.com", href: "mailto:hamdi2008@gmail.com" },
 };
 
 export const navigation = [
