@@ -143,10 +143,7 @@ export const projects: Project[] = [
     screenshot: "/projects/mnmuslim.png",
     screenshotAlt: "MNMuslim local services and events directory interface",
     actions: [
-      // TODO: Replace with the live MNMuslim URL.
-      { label: "Visit Website", href: null },
-      // TODO: Add a public GitHub URL only if the repository is public.
-      { label: "View GitHub", href: null },
+      { label: "Visit MNMuslim", href: "https://www.mnmuslim.com/" },
     ],
   },
   {
@@ -162,10 +159,7 @@ export const projects: Project[] = [
       poster: "/projects/mnhalal-poster.png",
     },
     actions: [
-      // TODO: Replace with the live MNHalal URL.
-      { label: "Visit Website", href: null },
-      // TODO: Add a public GitHub URL only if the repository is public.
-      { label: "View GitHub", href: null },
+      { label: "Visit MNHalal", href: "https://www.mnhalal.com/" },
     ],
   },
   {
@@ -178,10 +172,7 @@ export const projects: Project[] = [
     screenshot: "/projects/by-hamdi.png",
     screenshotAlt: "By Hamdi studio website showcasing products and AI strategy services",
     actions: [
-      // TODO: Replace with the live By Hamdi URL.
-      { label: "Visit Website", href: null },
-      // TODO: Add a public GitHub URL only if the repository is public.
-      { label: "View GitHub", href: null },
+      { label: "Visit Website", href: "https://www.byhamdi.co/" },
     ],
   },
 ];

@@ -2,13 +2,25 @@ import type { Project } from "@/data/portfolio";
 import { ProjectFrame } from "@/components/project-frame";
 
 function ProjectActions({ project }: { project: Project }) {
+  const visibleActions = project.actions.filter((action) => action.href);
+
+  if (visibleActions.length === 0) return null;
+
   return (
     <div className="project-actions" aria-label={`${project.name} links`}>
-      {project.actions.map((action) => action.href ? (
-        <a key={action.label} href={action.href}>{action.label}<span aria-hidden="true">↗</span></a>
-      ) : (
-        <span className="project-action-pending" key={action.label}>{action.label} · Coming soon</span>
-      ))}
+      {visibleActions.map((action) => {
+        const isExternal = action.href!.startsWith("http");
+        return (
+          <a
+            key={action.label}
+            href={action.href!}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
+          >
+            {action.label}<span aria-hidden="true">↗</span>
+          </a>
+        );
+      })}
     </div>
   );
 }

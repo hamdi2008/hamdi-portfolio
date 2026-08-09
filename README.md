@@ -52,11 +52,11 @@ After adding it, set `portfolio.resumeUrl` in `data/portfolio.ts` to `"/resume/h
 In `data/portfolio.ts`:
 
 - Replace `null` in the Hamdi OS **Watch Demo** action with the Loom URL.
-- Replace `null` in each **Visit Website** action with the final live URL.
-- Add **View GitHub** URLs only for repositories that are public.
+- Update live project URLs in each project’s `actions` array.
+- Add **View GitHub** actions only for repositories that are public.
 - Keep private repository URLs out of the file.
 
-Actions with missing URLs render as non-clickable “Coming soon” labels, avoiding broken `#` links.
+Actions with missing URLs are hidden, avoiding broken or misleading links.
 
 ## Hamdi OS case study
 
@@ -77,8 +77,8 @@ The functional placeholder route is at `/projects/hamdi-os`. Its editable projec
 - [x] MNHalal product preview video and poster
 - [ ] By Hamdi screenshot
 - [ ] Hamdi OS demo link
-- [ ] Final project URLs
-- [ ] Final public GitHub URLs
+- [x] MNMuslim, MNHalal, and By Hamdi live URLs
+- [ ] Any future public GitHub URLs
 - [ ] Resume PDF
 - [x] Twitter/X URL
 - [ ] Optional LinkedIn URL
