@@ -41,8 +41,7 @@ export const portfolio = {
   title: "AI Product Builder",
   availability: "Available for remote opportunities",
   location: "Based in Minnesota · Working remotely",
-  // TODO: Add the final PDF at public/resume/hamdi-hassan-resume.pdf, then set this to "/resume/hamdi-hassan-resume.pdf".
-  resumeUrl: null as string | null,
+  resumeUrl: "/resume/hamdi-hassan-resume.pdf" as string | null,
   resumePath: "/resume/hamdi-hassan-resume.pdf",
 };
 

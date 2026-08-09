@@ -39,13 +39,13 @@ The featured Hamdi OS layout can later support additional screenshots for Dashbo
 
 The MNMuslim, MNHalal, and By Hamdi recordings are lightweight and load only when their project frames approach the viewport. They pause when scrolled away. Small mobile screens, reduced-motion preferences, and data-saver connections receive static posters instead.
 
-## Replace the resume
+## Resume
 
-Add the final PDF at:
+The current resume is stored at:
 
 `public/resume/hamdi-hassan-resume.pdf`
 
-After adding it, set `portfolio.resumeUrl` in `data/portfolio.ts` to `"/resume/hamdi-hassan-resume.pdf"`. Until then, the visible header button remains intentionally disabled rather than sending visitors to a broken file.
+To replace it, overwrite that file while keeping the same filename. If the filename changes, update `portfolio.resumeUrl` in `data/portfolio.ts`.
 
 ## Add project and demo links
 
@@ -79,6 +79,6 @@ The functional placeholder route is at `/projects/hamdi-os`. Its editable projec
 - [ ] Hamdi OS demo link
 - [x] MNMuslim, MNHalal, and By Hamdi live URLs
 - [ ] Any future public GitHub URLs
-- [ ] Resume PDF
+- [x] Resume PDF
 - [x] Twitter/X URL
 - [ ] Optional LinkedIn URL
