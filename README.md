@@ -29,7 +29,7 @@ All personal information, page copy, project descriptions, links, skills, availa
 Place screenshots in `public/projects/` using these names:
 
 - `hamdi-os-dashboard.png`
-- `mnmuslim.png`
+- `mnmuslim-preview.mp4` and `mnmuslim-poster.png` (already supplied)
 - `mnhalal-preview.mp4` and `mnhalal-poster.png` (already supplied)
 - `by-hamdi.png`
 
@@ -37,7 +37,7 @@ The page shows a neutral fallback automatically while a file is missing. Screens
 
 The featured Hamdi OS layout can later support additional screenshots for Dashboard, History, Measurements, and Reviews without requiring a redesign.
 
-The MNHalal recording is under 1 MB and loads only when its project frame approaches the viewport. It pauses when scrolled away. Small mobile screens, reduced-motion preferences, and data-saver connections receive the static poster instead.
+The MNMuslim and MNHalal recordings are lightweight and load only when their project frames approach the viewport. They pause when scrolled away. Small mobile screens, reduced-motion preferences, and data-saver connections receive static posters instead.
 
 ## Replace the resume
 
@@ -73,7 +73,7 @@ The functional placeholder route is at `/projects/hamdi-os`. Its editable projec
 ## Content still needed
 
 - [ ] Hamdi OS dashboard screenshot
-- [ ] MNMuslim screenshot
+- [x] MNMuslim product preview video and poster
 - [x] MNHalal product preview video and poster
 - [ ] By Hamdi screenshot
 - [ ] Hamdi OS demo link

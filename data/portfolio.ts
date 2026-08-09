@@ -139,9 +139,12 @@ export const projects: Project[] = [
     description: "A community platform helping Minnesota Muslims discover trusted local services and events.",
     highlights: ["Built searchable service and event directories", "Designed listing and admin workflows", "Continue maintaining and expanding the platform with verified community information"],
     stack: ["Next.js", "JavaScript", "Supabase", "Tailwind CSS", "Vercel"],
-    // TODO: Replace with the real screenshot at public/projects/mnmuslim.png.
-    screenshot: "/projects/mnmuslim.png",
+    screenshot: "/projects/mnmuslim-poster.png",
     screenshotAlt: "MNMuslim local services and events directory interface",
+    video: {
+      src: "/projects/mnmuslim-preview.mp4",
+      poster: "/projects/mnmuslim-poster.png",
+    },
     actions: [
       { label: "Visit MNMuslim", href: "https://www.mnmuslim.com/" },
     ],
