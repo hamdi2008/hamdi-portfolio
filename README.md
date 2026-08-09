@@ -30,12 +30,14 @@ Place screenshots in `public/projects/` using these names:
 
 - `hamdi-os-dashboard.png`
 - `mnmuslim.png`
-- `mnhalal.png`
+- `mnhalal-preview.mp4` and `mnhalal-poster.png` (already supplied)
 - `by-hamdi.png`
 
 The page shows a neutral fallback automatically while a file is missing. Screenshots are displayed with their original proportions preserved inside a 16:10 product frame, so a 1600 × 1000 PNG, WebP, or AVIF is recommended. Avoid screenshots narrower than 1400 pixels.
 
 The featured Hamdi OS layout can later support additional screenshots for Dashboard, History, Measurements, and Reviews without requiring a redesign.
+
+The MNHalal recording is under 1 MB and loads only when its project frame approaches the viewport. It pauses when scrolled away. Small mobile screens, reduced-motion preferences, and data-saver connections receive the static poster instead.
 
 ## Replace the resume
 
@@ -72,7 +74,7 @@ The functional placeholder route is at `/projects/hamdi-os`. Its editable projec
 
 - [ ] Hamdi OS dashboard screenshot
 - [ ] MNMuslim screenshot
-- [ ] MNHalal screenshot
+- [x] MNHalal product preview video and poster
 - [ ] By Hamdi screenshot
 - [ ] Hamdi OS demo link
 - [ ] Final project URLs

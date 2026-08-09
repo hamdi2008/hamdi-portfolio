@@ -15,6 +15,10 @@ export type Project = {
   stack: string[];
   screenshot: string;
   screenshotAlt: string;
+  video?: {
+    src: string;
+    poster: string;
+  };
   actions: ProjectAction[];
 };
 
@@ -151,9 +155,12 @@ export const projects: Project[] = [
     description: "A directory helping people discover halal restaurants across Minnesota.",
     highlights: ["Built a searchable restaurant directory", "Created filtering and category browsing", "Continue growing the platform with verified restaurant listings"],
     stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
-    // TODO: Replace with the real screenshot at public/projects/mnhalal.png.
-    screenshot: "/projects/mnhalal.png",
+    screenshot: "/projects/mnhalal-poster.png",
     screenshotAlt: "MNHalal searchable Minnesota restaurant directory interface",
+    video: {
+      src: "/projects/mnhalal-preview.mp4",
+      poster: "/projects/mnhalal-poster.png",
+    },
     actions: [
       // TODO: Replace with the live MNHalal URL.
       { label: "Visit Website", href: null },
