@@ -171,9 +171,12 @@ export const projects: Project[] = [
     description: "A studio website showcasing products and AI strategy services.",
     highlights: ["Built a responsive marketing website", "Designed reusable interface components", "Added polished motion and interaction details"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
-    // TODO: Replace with the real screenshot at public/projects/by-hamdi.png.
-    screenshot: "/projects/by-hamdi.png",
+    screenshot: "/projects/by-hamdi-poster.png",
     screenshotAlt: "By Hamdi studio website showcasing products and AI strategy services",
+    video: {
+      src: "/projects/by-hamdi-preview.mp4",
+      poster: "/projects/by-hamdi-poster.png",
+    },
     actions: [
       { label: "Visit Website", href: "https://www.byhamdi.co/" },
     ],
