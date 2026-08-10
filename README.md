@@ -35,7 +35,7 @@ Place screenshots in `public/projects/` using these names:
 
 The page shows a neutral fallback automatically while a file is missing. Screenshots are displayed with their original proportions preserved inside a 16:10 product frame, so a 1600 × 1000 PNG, WebP, or AVIF is recommended. Avoid screenshots narrower than 1400 pixels.
 
-The featured Hamdi OS layout can later support additional screenshots for Dashboard, History, Measurements, and Reviews without requiring a redesign.
+The featured Hamdi OS layout is prepared for sanitized media showing Dashboard, Measurements, Recaps, Settings, Current Season, time-based planning, and Life Areas.
 
 The MNMuslim, MNHalal, and By Hamdi recordings are lightweight and load only when their project frames approach the viewport. They pause when scrolled away. Small mobile screens, reduced-motion preferences, and data-saver connections receive static posters instead.
 
@@ -47,11 +47,36 @@ The current resume is stored at:
 
 To replace it, overwrite that file while keeping the same filename. If the filename changes, update `portfolio.resumeUrl` in `data/portfolio.ts`.
 
-## Add project and demo links
+## Hamdi OS screenshot and demo video
+
+Add sanitized Hamdi OS media at:
+
+- `public/projects/hamdi-os-dashboard.png`
+- `public/projects/hamdi-os-demo.mp4` (optional)
+
+The screenshot is the default media and the video is detected automatically when present. The video uses the same lazy, viewport-aware, muted playback behavior as the other project previews. If the demo video is missing, no broken video element is rendered.
+
+Use only demo-account or explicitly approved data for Hamdi OS portfolio screenshots and videos.
+
+Never record a real personal account. Hamdi OS can contain private goals, religious routines, health information, financial information, family information, and personal measurements.
+
+### Suggested demo account
+
+Create the demo account inside Hamdi OS—not in this portfolio—with fully fictional information:
+
+- Name: Amina
+- Current Season: Growth
+- Life Areas: Health, Career, Learning, Finance, Family
+- Health: Exercise, drink water, weekly weigh-in
+- Career: Complete portfolio update, apply to three opportunities
+- Learning: Read 20 minutes, complete a course lesson
+- Finance: Weekly budget review, save toward an emergency fund
+- Family: Call family, plan a family visit
+
+## Add project links
 
 In `data/portfolio.ts`:
 
-- Replace `null` in the Hamdi OS **Watch Demo** action with the Loom URL.
 - Update live project URLs in each project’s `actions` array.
 - Add **View GitHub** actions only for repositories that are public.
 - Keep private repository URLs out of the file.
@@ -60,7 +85,7 @@ Actions with missing URLs are hidden, avoiding broken or misleading links.
 
 ## Hamdi OS case study
 
-The functional placeholder route is at `/projects/hamdi-os`. Its editable project text comes from `data/portfolio.ts`; route-specific metadata lives in `app/projects/hamdi-os/page.tsx`.
+The first case-study version is at `/projects/hamdi-os`. Its editable project and case-study text comes from `data/portfolio.ts`; route-specific metadata and layout live in `app/projects/hamdi-os/page.tsx`.
 
 ## Deploy to Vercel
 
@@ -76,7 +101,7 @@ The functional placeholder route is at `/projects/hamdi-os`. Its editable projec
 - [x] MNMuslim product preview video and poster
 - [x] MNHalal product preview video and poster
 - [x] By Hamdi product preview video and poster
-- [ ] Hamdi OS demo link
+- [ ] Sanitized Hamdi OS demo video
 - [x] MNMuslim, MNHalal, and By Hamdi live URLs
 - [ ] Any future public GitHub URLs
 - [x] Resume PDF

@@ -10,8 +10,9 @@ export type Project = {
   label?: string;
   status?: string;
   description: string;
-  summary?: string;
+  longDescription?: string;
   highlights: string[];
+  supportingHighlights?: string[];
   stack: string[];
   screenshot: string;
   screenshotAlt: string;
@@ -19,6 +20,8 @@ export type Project = {
     src: string;
     poster: string;
   };
+  caseStudyUrl?: string;
+  mediaNote?: string;
   actions: ProjectAction[];
 };
 
@@ -105,6 +108,48 @@ export const buildSteps: BuildStep[] = [
   { number: "04", title: "Learn and improve", description: "Use real-world usage and user feedback to identify what should be simplified, fixed, or expanded next." },
 ];
 
+export const projectLinks = {
+  hamdiOSCaseStudy: "/projects/hamdi-os",
+  mnMuslim: "https://www.mnmuslim.com/",
+  mnHalal: "https://www.mnhalal.com/",
+  byHamdi: "https://www.byhamdi.co/",
+};
+
+export const hamdiOSCaseStudy = {
+  headline: "A personal operating system for connecting daily actions to the bigger picture.",
+  introduction: "Hamdi OS started as a system I built for myself after getting tired of managing different parts of my life across Notes, Google Docs, and separate planning tools. As I used it every day, it evolved into a customizable personal operating system organized around life areas, time, measurements, and recaps.",
+  problem: {
+    title: "The problem",
+    description: "Most productivity tools focus on one layer of life: tasks, habits, goals, notes, or tracking. I wanted one simple system where those layers could work together without creating more planning work.",
+  },
+  productModel: {
+    title: "How the system works",
+    concepts: [
+      { number: "01", title: "Life Areas", description: "Users organize the system around areas that matter to them, such as Health, Finance, Family, Career, or Faith." },
+      { number: "02", title: "Time as a lens", description: "Users move between Today, Week, Month, Year, and Long-Term without rebuilding their plans in separate systems." },
+      { number: "03", title: "Record once", description: "Users complete or update something once. The system uses that information across relevant progress views." },
+      { number: "04", title: "Measurements", description: "Measurements live inside the life areas they belong to instead of functioning as an unrelated tracker." },
+      { number: "05", title: "Recaps", description: "Recaps help users look back at progress without maintaining a separate manual history system." },
+    ],
+  },
+  currentProduct: {
+    title: "Current product",
+    description: "The current dashboard combines Current Season, time-based planning, life areas, priorities, measurements, and progress into one desktop-first workspace.",
+  },
+  iteration: {
+    title: "How I build and iterate",
+    steps: ["Identify a problem from real usage", "Simplify the product model", "Design the workflow", "Build rapidly with AI development tools", "Use the product daily", "Gather beta feedback", "Remove unnecessary complexity", "Repeat"],
+  },
+  status: {
+    title: "Current status",
+    description: "Hamdi OS is currently in private beta. I am onboarding a small group of testers and using their feedback alongside my own daily use to simplify the product before a broader release.",
+  },
+  demo: {
+    title: "Hamdi OS Product Walkthrough",
+    emptyMessage: "Product walkthrough coming soon.",
+  },
+};
+
 export const projects: Project[] = [
   {
     name: "Hamdi OS",
@@ -112,24 +157,32 @@ export const projects: Project[] = [
     featured: true,
     label: "Featured Project",
     status: "Private Beta",
-    description: "A personal operating system for planning, tracking, and reviewing every area of life across daily, weekly, monthly, yearly, and long-term timeframes.",
-    summary: "I designed and built Hamdi OS from an idea into a working private beta. It brings goals, priorities, measurements, reviews, and history into one system so users can record actions once and see progress over time.",
+    description: "A desktop-first personal operating system that helps people organize every area of life through customizable life areas, time-based planning, integrated measurements, recaps, and progress tracking.",
+    longDescription: "Instead of separating goals, priorities, measurements, and reviews across different apps, Hamdi OS brings them into one system. Users organize life by area, record actions once, and use Today, Week, Month, Year, and Long-Term views to understand what matters now and how it connects to the bigger picture.",
     highlights: [
-      "Designed the product structure and user experience from scratch",
-      "Built authentication and database architecture",
-      "Created customizable life-area dashboards",
-      "Implemented daily, weekly, monthly, yearly, and long-term planning",
-      "Built measurements, reviews, history, progress tracking, and recurring priorities",
-      "Continue improving the product through daily personal use and beta tester feedback",
+      "Designed a customizable life-area architecture that can adapt to different users and priorities",
+      "Created one dashboard organized around Today, Week, Month, Year, and Long-Term views",
+      "Designed the Current Season concept to give users context for what they are focusing on during a particular stage of life",
+      "Integrated measurements directly into relevant life areas instead of treating tracking as a separate system",
+      "Reworked traditional history and review workflows into simpler Recaps that surface progress over time",
+      "Built progress tracking so daily actions can connect to larger weekly, monthly, yearly, and long-term goals",
+    ],
+    supportingHighlights: [
+      "Built authentication and Supabase-backed user data architecture",
+      "Continue simplifying and improving the product through daily personal use and beta tester feedback",
     ],
     stack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Supabase", "PostgreSQL", "Vercel", "Claude", "Claude Code", "ChatGPT", "OpenAI Codex"],
     // TODO: Replace with the real dashboard screenshot at public/projects/hamdi-os-dashboard.png.
     screenshot: "/projects/hamdi-os-dashboard.png",
-    screenshotAlt: "Hamdi OS life-area dashboard showing planning, measurements, and progress tracking",
+    screenshotAlt: "Hamdi OS dashboard showing Current Season, time-based planning, and customizable life areas.",
+    video: {
+      src: "/projects/hamdi-os-demo.mp4",
+      poster: "/projects/hamdi-os-dashboard.png",
+    },
+    caseStudyUrl: projectLinks.hamdiOSCaseStudy,
+    mediaNote: "Dashboard · Measurements · Recaps · Settings · Current Season",
     actions: [
-      { label: "View Case Study", href: "/projects/hamdi-os" },
-      // TODO: Add the Hamdi OS Loom demo URL.
-      { label: "Watch Demo", href: null },
+      { label: "View Case Study", href: projectLinks.hamdiOSCaseStudy },
     ],
   },
   {
@@ -145,7 +198,7 @@ export const projects: Project[] = [
       poster: "/projects/mnmuslim-poster.png",
     },
     actions: [
-      { label: "Visit MNMuslim", href: "https://www.mnmuslim.com/" },
+      { label: "Visit MNMuslim", href: projectLinks.mnMuslim },
     ],
   },
   {
@@ -161,7 +214,7 @@ export const projects: Project[] = [
       poster: "/projects/mnhalal-poster.png",
     },
     actions: [
-      { label: "Visit MNHalal", href: "https://www.mnhalal.com/" },
+      { label: "Visit MNHalal", href: projectLinks.mnHalal },
     ],
   },
   {
@@ -177,7 +230,7 @@ export const projects: Project[] = [
       poster: "/projects/by-hamdi-poster.png",
     },
     actions: [
-      { label: "Visit Website", href: "https://www.byhamdi.co/" },
+      { label: "Visit Website", href: projectLinks.byHamdi },
     ],
   },
 ];

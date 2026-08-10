@@ -55,16 +55,22 @@ export function FeaturedProject({ project }: { project: Project }) {
       <div className="featured-details">
         <div>
           <p className="project-description featured-description">{project.description}</p>
-          {project.summary && <p className="project-summary">{project.summary}</p>}
+          {project.longDescription && <p className="project-summary">{project.longDescription}</p>}
           <ProjectActions project={project} />
         </div>
         <div>
           <p className="detail-label">What I built</p>
           <ul className="highlights featured-highlights">{project.highlights.map((item) => <li key={item}>{item}</li>)}</ul>
+          {project.supportingHighlights && (
+            <div className="supporting-highlights">
+              <p>Foundation &amp; iteration</p>
+              {project.supportingHighlights.map((item) => <span key={item}>{item}</span>)}
+            </div>
+          )}
           <div className="stack-list" aria-label={`${project.name} technology stack`}>{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
         </div>
       </div>
-      <p className="future-shots">Screenshot layout ready for Dashboard · History · Measurements · Reviews</p>
+      {project.mediaNote && <p className="future-shots">Current product areas · {project.mediaNote}</p>}
     </article>
   );
 }
