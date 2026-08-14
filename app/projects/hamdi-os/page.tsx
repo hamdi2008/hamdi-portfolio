@@ -82,7 +82,7 @@ export default function HamdiOSCaseStudyPage() {
           <p>{hamdiOSCaseStudy.status.description}</p>
         </section>
 
-        <section className="case-study-section" aria-labelledby="demo-title">
+        <section className="case-study-section" id="demo" aria-labelledby="demo-title">
           <div className="case-study-section-heading compact">
             <p className="case-study-label">Demo</p>
             <h2 id="demo-title">{hamdiOSCaseStudy.demo.title}</h2>

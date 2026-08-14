@@ -172,7 +172,6 @@ export const projects: Project[] = [
       "Continue simplifying and improving the product through daily personal use and beta tester feedback",
     ],
     stack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Supabase", "PostgreSQL", "Vercel", "Claude", "Claude Code", "ChatGPT", "OpenAI Codex"],
-    // TODO: Replace with the real dashboard screenshot at public/projects/hamdi-os-dashboard.png.
     screenshot: "/projects/hamdi-os-dashboard.png",
     screenshotAlt: "Hamdi OS dashboard showing Current Season, time-based planning, and customizable life areas.",
     video: {
@@ -183,6 +182,7 @@ export const projects: Project[] = [
     mediaNote: "Dashboard · Measurements · Recaps · Settings · Current Season",
     actions: [
       { label: "View Case Study", href: projectLinks.hamdiOSCaseStudy },
+      { label: "Watch Demo", href: `${projectLinks.hamdiOSCaseStudy}#demo` },
     ],
   },
   {

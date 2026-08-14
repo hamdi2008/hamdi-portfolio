@@ -28,7 +28,7 @@ All personal information, page copy, project descriptions, links, skills, availa
 
 Place screenshots in `public/projects/` using these names:
 
-- `hamdi-os-dashboard.png`
+- `hamdi-os-dashboard.png` and `hamdi-os-demo.mp4` (already supplied)
 - `mnmuslim-preview.mp4` and `mnmuslim-poster.png` (already supplied)
 - `mnhalal-preview.mp4` and `mnhalal-poster.png` (already supplied)
 - `by-hamdi-preview.mp4` and `by-hamdi-poster.png` (already supplied)
@@ -52,9 +52,9 @@ To replace it, overwrite that file while keeping the same filename. If the filen
 Add sanitized Hamdi OS media at:
 
 - `public/projects/hamdi-os-dashboard.png`
-- `public/projects/hamdi-os-demo.mp4` (optional)
+- `public/projects/hamdi-os-demo.mp4`
 
-The screenshot is the default media and the video is detected automatically when present. The video uses the same lazy, viewport-aware, muted playback behavior as the other project previews. If the demo video is missing, no broken video element is rendered.
+The screenshot is the default media and the video is detected automatically. The video uses the same lazy, viewport-aware, muted playback behavior as the other project previews. If it is ever removed, no broken video element is rendered.
 
 Use only demo-account or explicitly approved data for Hamdi OS portfolio screenshots and videos.
 
@@ -97,11 +97,11 @@ The first case-study version is at `/projects/hamdi-os`. Its editable project an
 
 ## Content still needed
 
-- [ ] Hamdi OS dashboard screenshot
+- [x] Hamdi OS dashboard screenshot
 - [x] MNMuslim product preview video and poster
 - [x] MNHalal product preview video and poster
 - [x] By Hamdi product preview video and poster
-- [ ] Sanitized Hamdi OS demo video
+- [x] Sanitized Hamdi OS demo video
 - [x] MNMuslim, MNHalal, and By Hamdi live URLs
 - [ ] Any future public GitHub URLs
 - [x] Resume PDF
