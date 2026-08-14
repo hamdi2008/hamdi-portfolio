@@ -66,6 +66,7 @@ export const navigation = [
 export const pageContent = {
   hero: {
     headline: "I design, build, and ship useful web products with AI.",
+    opportunity: "Open to remote AI product and product engineering opportunities.",
     supporting: "I use Claude, Claude Code, ChatGPT, OpenAI Codex, Next.js, TypeScript, Supabase, and Vercel to turn ideas into working products and improve them through real-world use.",
     primaryAction: "View My Work",
     processLabel: "How I build",
@@ -73,15 +74,15 @@ export const pageContent = {
   },
   projects: {
     eyebrow: "Selected work",
-    title: "Products built to be used.",
-    description: "From personal software to community platforms, I design, build, launch, maintain, and improve products through real-world use.",
+    title: "Products I’ve built and shipped.",
+    description: "From private-beta product software to live community platforms, I take ownership from product thinking and UX through implementation, launch, maintenance, and iteration.",
   },
   about: {
     eyebrow: "About",
-    title: "A product builder from idea to launch.",
+    title: "An AI-native builder from idea to launch.",
     paragraphs: [
-      "I am an AI-native product builder based in Minnesota. I use AI tools alongside modern web technologies to turn ideas into working products. I focus on solving useful problems, shipping quickly, and improving products through real-world use.",
-      "My work includes productivity software, community directories, and digital platforms that I continue to operate and improve after launch.",
+      "I’m an AI-native product builder based in Minnesota. I turn ideas into working web products—from defining the problem and designing the experience to building, shipping, and iterating after launch.",
+      "I work especially well in fast-moving environments where builders are expected to take ownership, figure things out, and ship.",
     ],
   },
   howIbuild: {
@@ -95,9 +96,11 @@ export const pageContent = {
     description: "A practical stack for moving quickly while maintaining a solid product foundation.",
   },
   contact: {
-    eyebrow: "Have a product in mind?",
-    title: "Let’s build something useful.",
-    description: "I’m open to remote opportunities with founders and teams building useful AI-powered products.",
+    eyebrow: "Open to remote opportunities",
+    title: "Let’s work together.",
+    description: "I’m looking for remote opportunities where I can help a team turn ideas into useful, shipped products using modern web technologies and AI.",
+    primaryAction: "Email Me",
+    secondaryAction: "View Resume",
   },
 };
 
@@ -188,8 +191,9 @@ export const projects: Project[] = [
   {
     name: "MNMuslim",
     slug: "mnmuslim",
+    status: "Live product · Actively maintained",
     description: "A community platform helping Minnesota Muslims discover trusted local services and events.",
-    highlights: ["Built searchable service and event directories", "Designed listing and admin workflows", "Continue maintaining and expanding the platform with verified community information"],
+    highlights: ["Built searchable service and event directories", "Designed listing and admin workflows", "Continuously expanding the platform with verified community information and improving it through real usage"],
     stack: ["Next.js", "JavaScript", "Supabase", "Tailwind CSS", "Vercel"],
     screenshot: "/projects/mnmuslim-poster.png",
     screenshotAlt: "MNMuslim local services and events directory interface",
@@ -204,8 +208,9 @@ export const projects: Project[] = [
   {
     name: "MNHalal",
     slug: "mnhalal",
+    status: "Live product · Actively maintained",
     description: "A directory helping people discover halal restaurants across Minnesota.",
-    highlights: ["Built a searchable restaurant directory", "Created filtering and category browsing", "Continue growing the platform with verified restaurant listings"],
+    highlights: ["Built a searchable restaurant directory", "Created filtering and category browsing", "Continuously expanding the directory with verified listings and improving the product through real usage"],
     stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
     screenshot: "/projects/mnhalal-poster.png",
     screenshotAlt: "MNHalal searchable Minnesota restaurant directory interface",
@@ -220,11 +225,12 @@ export const projects: Project[] = [
   {
     name: "By Hamdi",
     slug: "by-hamdi",
-    description: "A studio website showcasing products and AI strategy services.",
+    status: "Live site",
+    description: "A responsive studio website I designed and shipped to present AI-powered products and services.",
     highlights: ["Built a responsive marketing website", "Designed reusable interface components", "Added polished motion and interaction details"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
     screenshot: "/projects/by-hamdi-poster.png",
-    screenshotAlt: "By Hamdi studio website showcasing products and AI strategy services",
+    screenshotAlt: "By Hamdi studio website showcasing AI-powered products",
     video: {
       src: "/projects/by-hamdi-preview.mp4",
       poster: "/projects/by-hamdi-poster.png",
@@ -236,8 +242,8 @@ export const projects: Project[] = [
 ];
 
 export const skillGroups = [
-  { name: "AI", skills: ["Claude", "Claude Code", "ChatGPT", "OpenAI Codex", "AI-assisted product development", "Prompt engineering"] },
-  { name: "Frontend", skills: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"] },
+  { name: "AI", skills: ["Claude", "ChatGPT", "OpenAI Codex", "AI-assisted development"] },
+  { name: "Frontend", skills: ["Next.js", "React", "TypeScript", "Tailwind CSS"] },
   { name: "Backend", skills: ["Supabase", "PostgreSQL", "Authentication", "REST APIs"] },
   { name: "Tools", skills: ["Git", "GitHub", "Vercel", "Figma"] },
 ];

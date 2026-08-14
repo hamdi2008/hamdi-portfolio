@@ -43,6 +43,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-
 .hero h1 span { display: block; }
 .hero-role { margin: 22px 0 52px; font-size: clamp(20px, 2.2vw, 31px); font-weight: 800; letter-spacing: -.04em; }
 .hero-lede { max-width: 750px; margin: 0 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 4.6vw, 57px); line-height: 1.03; letter-spacing: -.045em; }
+.hero-opportunity { max-width: 670px; margin: 0 0 14px; color: var(--ink); font-size: 15px; line-height: 1.55; font-weight: 800; }
 .hero-detail { max-width: 670px; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.75; }
 .hero-actions { margin-top: 38px; display: flex; align-items: center; flex-wrap: wrap; gap: 28px; }
 .social-links { display: flex; gap: 22px; }

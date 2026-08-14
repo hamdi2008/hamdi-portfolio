@@ -30,7 +30,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     <article className="project-card">
       <ProjectFrame project={project} sizes="(max-width: 900px) 100vw, 50vw" />
       <div className="project-content">
-        <div className="project-kicker"><span>0{index + 2}</span></div>
+        <div className="project-kicker"><span>0{index + 2}</span>{project.status && <em>{project.status}</em>}</div>
         <h3>{project.name}</h3>
         <p className="project-description">{project.description}</p>
         <ul className="highlights">{project.highlights.map((item) => <li key={item}>{item}</li>)}</ul>

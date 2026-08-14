@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { siteConfig } from "@/data/portfolio";
 import "./globals.css";
 
-const description = "AI Product Builder designing, building, and shipping useful web products with Claude, ChatGPT, OpenAI Codex, Next.js, TypeScript, and Supabase.";
+const description = "AI Product Builder designing, building, and shipping useful web products with modern web technologies and AI. Open to remote AI product and product engineering opportunities.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

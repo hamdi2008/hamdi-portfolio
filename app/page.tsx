@@ -31,6 +31,7 @@ export default function Home() {
             <h1 id="hero-title"><span>{portfolio.name.first}</span><span>{portfolio.name.last}</span></h1>
             <p className="hero-role">{portfolio.title}</p>
             <p className="hero-lede">{pageContent.hero.headline}</p>
+            <p className="hero-opportunity">{pageContent.hero.opportunity}</p>
             <p className="hero-detail">{pageContent.hero.supporting}</p>
             <div className="hero-actions">
               <Button href="#projects" size="large">{pageContent.hero.primaryAction} <span aria-hidden="true">↘</span></Button>
@@ -90,13 +91,12 @@ export default function Home() {
             <h2 id="contact-title">{pageContent.contact.title}</h2>
             <p>{pageContent.contact.description}</p>
             <div className="contact-actions">
-              <Button href={socialLinks.email.href} variant="light" size="large"><span aria-hidden="true">✉</span> Email Me</Button>
-              <Button href="/projects/hamdi-os" variant="light-outline" size="large">View Hamdi OS</Button>
+              <Button href={socialLinks.email.href} variant="light" size="large"><span aria-hidden="true">✉</span> {pageContent.contact.primaryAction}</Button>
+              {portfolio.resumeUrl && <Button href={portfolio.resumeUrl} variant="light-outline" size="large" download>{pageContent.contact.secondaryAction}</Button>}
             </div>
             <div className="contact-links">
               <a href={socialLinks.github.href} target="_blank" rel="noreferrer">GitHub</a>
               <a href={socialLinks.twitter.href} target="_blank" rel="noreferrer">Twitter/X</a>
-              {portfolio.resumeUrl && <a href={portfolio.resumeUrl} download>Resume</a>}
             </div>
           </div>
         </section>
